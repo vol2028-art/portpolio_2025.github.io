@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GSAP을 활용한 스크롤 가로/세로 효과</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+
+  <body>
+    <nav>
+      <ul class="nav_list">
+        <li>
+          <ul class="nav_row">
+            <li>Web Designer,</li>
+            <li>Hwang Eun Bin</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="nav_row">
+            <li class="soft">vol2028@naver.com</li>
+            <li>Email</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="nav_row">
+            <li class="soft">+82 1041242059</li>
+            <li>Num</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="sec01" class="items">
+        <div id="box" style= "position: absolute;"><img class="main_img" src="Group 17.png" alt=""></div>
+        <!-- <div><img class="main_img" src="Group 17.png" alt=""></div> -->
+      </section>
+      <section id="sec02" class="items">
+        <!-- <span>01</span>
+      <div class="img"></div> -->
+        <div class="proflie">
+          <div class="txt">
+            <h1>안녕하세요. 처음 뵙겠습니다,<br>
+              <a class="yellow">황은빈</a>입니다.</h1>
+          </div>
+          <!-- 왼쪽 열 -->
+          <div class="skill">
+                  <dl class="">
+                      <dt>DAY OF BIRTH</dt>
+                      <dd>1998. 02. 28</dd>
+                      <dt>PHONE</dt>
+                      <dd>+82 10 4124 2059</dd>
+                      <dt>MAIL</dt>
+                      <dd>vol2028@naver.com</dd>
+                      <dt>LICENSE</dt>
+                      <dd><strong>2025</strong>  &nbsp;  운전면허증<br>
+                          <strong>2021</strong>  &nbsp;  웹디자인기능사<br>
+                          <strong>2021</strong>  &nbsp;   GTQ 1급<br>
+                          <strong>2017</strong>  &nbsp;   GTQ 2급<br>
+                          <strong>2008</strong>  &nbsp; 아래한글
+                      </dd>
+                      <dt>EXPERIENCE </dt>
+                      <dd>(주)디앤애드 컴퍼니 UI · UX 팀 디자이너<br>
+                          <spen class="s_400">2022. 01 ~ 2023. 08</spen><br>
+                          이마트 카탈로그 외주 작업<br>
+                          <spen class="s_400">2023 ~</spen><br>
+                          레이크소프트 웹 디자이너 프리랜서 <br>
+                          <spen class="s_400">2024 ~</spen>
+                      </dd>
+                  </dl>
+                  <dl class="">
+                      <dt>LICENSE</dt>
+                      <dd><strong>2025</strong>  &nbsp;  한양사이버대학교 뉴미디어디자인과 3학년 재학 중 <br>
+                          <strong>2021</strong>  &nbsp;  이젠 컴퓨터 학원 UI/UX 디자인 과정 수료<br>
+                          <strong>2020</strong>  &nbsp;  (NCS)그래픽디자인 실무(포토샵,일러스트) 교육 이수<br>
+                          <strong>2019</strong>  &nbsp;  서영대학교 산업디자인과 졸업<br>
+                          <strong>2017</strong>  &nbsp;  인천원당고등학교 졸업<br>
+                          
+                      </dd>
+                      <dt>AWAEDS</dt>
+                      <dd><strong>2018</strong>  &nbsp;  54회 경기디자인 대전 장려상 <br>
+                          <strong>2018</strong>  &nbsp;  담양 대나무 공예 공모전 입상<br>
+                          <strong>2017</strong>  &nbsp;  53회 경기 디자인 대전 동상
+                      </dd>
+                  </dl>
+              </div>
+          </div>
+      </div>
+  </div>
+        </div>
+      </section>
+
+      <!-- 가로스크롤 메인 -->
+      
+      <main id="hor">
+
+        <section id="sec03" class="items">
+          <div class="proflie">
+            <div class="txt_box">
+              <p>Web Design 01</p>
+              <h1 class="f_60">우체국물류지원단</h1>
+              <p class="wolk_txt mb_10"><strong>WOLK</strong> &nbsp; 2023 07 - 2023 08 / 100%</p>
+              <p class="tool_txt mb_10"><strong>TOOL</strong> &nbsp;&nbsp; Photoshop &nbsp;Illustrator &nbsp;Figma</p>
+              <p>우체국물류지원단은 우정사업본부 산하 준정부 공공기관으로,<br> 안전·신속·정확한 우편물류 서비스를 효율적으로 제공함으로써 국민의 편익 증진에 이바지하기 위해 설립되었으며,<br> 국내 우편물 운송, 국제 우편물 항공 운송, 물류센터 운영, 소포배달 등의 사업을 추진하고 있습니다.</p>
+            </div>
+            <a href="https://www.pola.or.kr/web/main/mainPage.do" class="btn">Link</a>
+          </div>
+        </section>
+        
+        <section id="sec04" class="items">
+          <div class="proflie">
+            <div class="txt_box">
+              <p>Web Design 02</p>
+              <h1 class="f_60">에이조스바이오</h1>
+              <p class="wolk_txt mb_10"><strong>WOLK</strong> &nbsp; 2023 01 - 2023 02 / 100%</p>
+              <p class="tool_txt mb_10"><strong>TOOL</strong> &nbsp;&nbsp; Photoshop &nbsp;Illustrator &nbsp;After effects</p>
+              <p>'더 좋은 삶을 위한 선택'을 기본 기업 정신으로, 창업자 및 핵심 기술진이 오랫동안 축적해온 <br>
+                생명과학/바이오/의약개발 관련 풍부한 경험과 지식을 바탕으로,<br>
+                경쟁력 있는 다양한 바이오 의료용 제품을 연구, 개발하는 회사입니다.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="sec05" class="items">
+          <div class="proflie">
+            <div class="txt_box">
+              <p>Web Design 03</p>
+              <h1 class="f_60">서천건설</h1>
+              <p class="wolk_txt mb_10"><strong>WOLK</strong> &nbsp; 2023 01 - 2023 02 / 100%</p>
+              <p class="tool_txt mb_10"><strong>TOOL</strong> &nbsp;&nbsp; Photoshop &nbsp;Illustrator &nbsp;After effects</p>
+              <p>'더 좋은 삶을 위한 선택'을 기본 기업 정신으로, 창업자 및 핵심 기술진이 오랫동안 축적해온 <br>
+                생명과학/바이오/의약개발 관련 풍부한 경험과 지식을 바탕으로,<br>
+                경쟁력 있는 다양한 바이오 의료용 제품을 연구, 개발하는 회사입니다.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+      <section id="sec06" class="items">
+        <span>06</span>
+        <div class="img"></div>
+      </section>
+      <section id="sec07" class="items">
+        <span>07</span>
+        <div class="img"></div>
+      </section>
+    </main>
+  </body>
+  <!-- partial -->
+  <script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
